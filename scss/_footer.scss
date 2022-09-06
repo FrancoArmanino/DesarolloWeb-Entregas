@@ -1,0 +1,37 @@
+footer {
+    max-width: 100%;
+    background-color: #333;
+    font-size: 1.25rem;
+    margin-top: 3.125rem;
+    grid-area: footer;
+    .footer {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        .redSocial{
+            a{
+                @include redes;
+            }
+         .twitter {
+            &:hover {
+                color: map-get($redes,twitter );
+            }
+        }
+        .facebook {
+            &:hover {
+                color: map-get($redes,facebook );
+            }
+        }
+        .instagram {
+            &:hover {
+                color: map-get($redes,instagram );
+            }
+        }
+        } 
+      }
+      h3{
+        text-align: center;
+        color: white;
+        font-size: 2.1875rem;
+      }
+  }
